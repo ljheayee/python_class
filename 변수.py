@@ -1,0 +1,47 @@
+##x = int(input("첫 번째 수 입력:"))
+##y = input(" 두 번째 수 입력:")
+##y = int(y)
+##z = float(input("실수 값 입력:"))
+##print(x+y,z)
+##
+##x = int(input("첫 번째 정수를 입력하시오:"))
+##y = int(input("두 번째 정수를 입력하시오:"))
+##
+##print(x,"+",y,"=",x+y)
+##print(x,"-",y,"=",x-y)
+##print(x,"*",y, "=", x*y)
+
+##PI=3.14
+##x=int(input("반지름을 입력하세요:"))
+##print(x**2*PI)
+
+import turtle
+t= turtle.Turtle()
+t.shape("turtle")
+radius = int(input("원의 반지름 길이를 입력하세오:"))
+color = input("삼각형의 색상을 입력하세요:")
+t.color(color)
+t.up()
+t.goto(-100, 0)
+t.down()
+t.begin_fill()
+t.circle(radius)
+t.end_fill()
+color = input("삼각형의 색상을 입력하세요:")
+t.color(color)
+t.up()
+t.goto(0, 0)
+t.down()
+t.begin_fill()
+t.circle(radius+ 20)
+t.end_fill()
+color = input("삼각형의 색상을 입력하세요:")
+t.color(color)
+t.up()
+t.goto(100, 0)
+t.down()
+t.begin_fill()
+t.circle(radius+40)
+t.end_fill()
+
+
